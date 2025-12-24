@@ -121,6 +121,19 @@
 </head>
 
 <body>
+
+<audio id="bg-music" preload="auto" loop>
+    <source src="https://raw.githubusercontent.com/ngotranhoangthinhhtk8c-cmd/Giang_sinh_cho_em/main/audio.mp3" type="audio/mp3">
+</audio>
+
+<script>
+document.addEventListener("click", function () {
+    const audio = document.getElementById("bg-music");
+    audio.volume = 0.5;
+    audio.play();
+}, { once: true });
+</script>
+    
     <div id="error-log"></div>
     <div id="ui-layer">
         <div id="status" class="badge">🎄 Merry Christmas 🎄</div>
@@ -610,5 +623,6 @@
 
 
 </html>
+
 
 
