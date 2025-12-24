@@ -131,9 +131,9 @@ const audio = document.getElementById("bg-music");
 audio.volume = 0.5;
 
 document.addEventListener("click", () => {
-    if (audio.paused) {
-        audio.play();
-    }
+    audio.paused();
+    audio.currentTime = 0;
+    audio.play();  
 }, { once: true });
 </script>
     
@@ -626,6 +626,7 @@ document.addEventListener("click", () => {
 
 
 </html>
+
 
 
 
