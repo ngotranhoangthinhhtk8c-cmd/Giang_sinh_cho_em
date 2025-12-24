@@ -160,7 +160,7 @@ document.addEventListener("click", () => {
         bgMusic.loop = true; bgMusic.volume = 1.0;
 
         const loader = new THREE.TextureLoader();
-        const photoFiles = ['./a1.jpg', './a2.jpg', './a3.jpg', './a4.jpg', './a5.jpg', './a6.jpg', './a7.jpg']; //Thay hoặc thêm số ảnh dòng 319 sửa ở đây và folder img
+        const photoFiles = ['./a1.jpg', './a2.jpg', './a6.jpg', './a7.jpg', './a5.jpg']; //Thay hoặc thêm số ảnh dòng 319 sửa ở đây và folder img
         const photoTextures = [];
         photoFiles.forEach((f, i) => photoTextures[i] = loader.load(f));
 
@@ -325,7 +325,7 @@ document.addEventListener("click", () => {
             const borderGeo = new THREE.PlaneGeometry(9, 9);
             const borderMat = new THREE.MeshBasicMaterial({ color: 0xFFD700 });
 
-            for (let i = 0; i < 7; i++) { //số ảnh hiển thị 4
+            for (let i = 0; i < 5; i++) { //số ảnh hiển thị 4
                 const mat = new THREE.MeshBasicMaterial({
                     map: photoTextures[i], side: THREE.DoubleSide
                 });
@@ -626,6 +626,7 @@ document.addEventListener("click", () => {
 
 
 </html>
+
 
 
 
