@@ -123,14 +123,17 @@
 <body>
 
 <audio id="bg-music" preload="auto" loop>
-    <source src="https://raw.githubusercontent.com/ngotranhoangthinhhtk8c-cmd/Giang_sinh_cho_em/main/audio.mp3" type="audio/mp3">
+  <source src="https://raw.githubusercontent.com/ngotranhoangthinhhtk8c-cmd/Giang_sinh_cho_em/main/audio.mp3" type="audio/mp3">
 </audio>
 
 <script>
-document.addEventListener("click", function () {
-    const audio = document.getElementById("bg-music");
-    audio.volume = 0.5;
-    audio.play();
+const audio = document.getElementById("bg-music");
+audio.volume = 0.5;
+
+document.addEventListener("click", () => {
+    if (audio.paused) {
+        audio.play();
+    }
 }, { once: true });
 </script>
     
@@ -623,6 +626,7 @@ document.addEventListener("click", function () {
 
 
 </html>
+
 
 
 
