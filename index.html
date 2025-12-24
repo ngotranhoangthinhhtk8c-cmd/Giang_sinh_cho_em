@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christmas</title>
+    <title>Giáng sinh của tzy ♥️❤️‍🩹</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
@@ -144,7 +144,7 @@
         bgMusic.loop = true; bgMusic.volume = 1.0;
 
         const loader = new THREE.TextureLoader();
-        const photoFiles = ['./img/a1.jpg', './img/a2.jpg', './img/a3.jpg', './img/a4.jpg']; //Thay hoặc thêm số ảnh dòng 319 sửa ở đây và folder img
+        const photoFiles = ['./a1.jpg', './a2.jpg', './a3.jpg', './a4.jpg']; //Thay hoặc thêm số ảnh dòng 319 sửa ở đây và folder img
         const photoTextures = [];
         photoFiles.forEach((f, i) => photoTextures[i] = loader.load(f));
 
@@ -340,7 +340,7 @@
             lctx.fillStyle = '#FF3366';
             lctx.shadowColor = '#FF99AA';
             lctx.shadowBlur = 40;
-            lctx.fillText('I LOVE YOU', 512, 160);
+            lctx.fillText('Anh yêu em tzy ♥️', 512, 160);
 
             const loveTex = new THREE.CanvasTexture(loveCanvas);
             const loveMat = new THREE.MeshBasicMaterial({
@@ -607,5 +607,6 @@
         function logError(e) { document.getElementById('error-log').style.display = 'block'; document.getElementById('error-log').innerText += e + "\n"; }
     </script>
 </body>
+
 
 </html>
